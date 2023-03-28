@@ -1,0 +1,91 @@
+﻿Taxa.clean;Taxon;Specimen;Abb;NBHF?;Cl;SBL;Cw;Ch;W2;ITD;GAN;FC;T;Ref.
+simocetid;simocetid;CCNHM 1000;Ol sp;U;33,95;18,78;9,98;4,576666667;6,686666667;0,5725;0,55;6,62;2,393888889;Racicot et al. 2019
+Delphinapterus leucas;Delphinapterus leucas - L;USNM 504673;De leL504673;mono;49,38;37,26;14,34;5,906666667;10,965;1,25;0,73;NA;1,962646296;Racicot et al. 2018
+Delphinapterus leucas;Delphinapterus leucas - R;USNM 504673;De leR504673;mono;48,83;36,97;15,2;6,19;10,89;1,446666667;0,623333333;7,74;1,955631481;Racicot et al. 2018
+Delphinapterus leucas;Delphinapterus leucas - R;USNM 572014;De le572014 ;mono;50,79;44,91;15,385;7,02;11,51;1,643333333;0,616666667;8,15;2,120279631;Racicot et al. 2018
+Monodon monoceros;Monodon monoceros - R;USNM 267958;Mo mo267958;mono;42,17;32,62;14,105;6,16;10,61;1,503333333;0,683333333;10,37;1,945409258;Racicot et al. 2018
+Monodon monoceros;Monodon monoceros  - L;NMNS M27181;Mo mo27181L;mono;46,43;33,18;15,185;6,46;10,885;1,42;0,773333333;11,8;1,890029631;Racicot et al. 2018
+Monodon monoceros;Monodon monoceros - R;NMNS M27181;Mo mo27181R;mono;46,02;33,65;15,2;6,42;10,985;1,52;0,773333333;11,79;1,912181481;Racicot et al. 2018
+Monodon monoceros;Monodon monoceros;LACM 72174a;Mo mo72174a;mono;48,24;36,13;15,405;6,19;10,94;1,386666667;0,79;14,29;2;Racicot et al. 2018
+Monodon monoceros;Monodon monoceros;LACM 72174b;Mo mo72174b;mono;47,7;36,85;14,945;6,275;10,835;1,34;0,78;15,45;1,986455556;Racicot et al. 2018
+Monodon monoceros;Monodon monoceros;LACM 72326a;Mo mo72326a;mono;47,16;37,19;14,36;5,78;10,975;1,443333333;0,77;16,49;1,887591667;Racicot et al. 2018
+Monodon monoceros;Monodon monoceros;LACM 72326b;Mo mo72326b;mono;47,18;37,11;14,6;5,92;10,765;1,16;0,756666667;14,01;1,925025;Racicot et al. 2018
+Monodon monoceros;Monodon monoceros;LACM 72548a;Mo mo72548a;mono;48,035;39,21;14,045;7,045;10,735;1,063333333;0,756666667;15,21;1,962795369;Racicot et al. 2018
+Monodon monoceros;Monodon monoceros;LACM 72548b;Mo mo72548b;mono;48,24;39,54;15,40333333;6,726666667;11,30666667;1,176666667;0,735;13,53;1,945806481;Racicot et al. 2018
+Acrophyseter;Acrophyseter_;;Acr;U;41,345;40,19;14,715;6,84;10,78;1,026;0,686666667;7,76;2;Galatius et al. 2019
+Orcinus orca;Orcinus orca;LACM 72453;Or or;no;43,005;38,75;16,79;7,095;10,25;1,366666667;0,743333333;13,94;2;Galatius et al. 2019
+Brachydelphis;Brachydelphis_ PPI 125;MNMH-F-PPI 125;Br sp;U;25,985;22,93;9,51;3,735;6,645;0,71;0,503333333;5,7;1,84;Galatius et al. 2019
+Pliopontos littoralis;Pliopontos littoralis_ SAS 953 (figured);SAS953;Pl li;U;25,755;22,885;9,556666667;3,276666667;6,883333333;0,696666667;0,46;3,5;1,72;Galatius et al. 2019
+Cephalorhynchus commersonii;Cephalorhynchus commersonii - L;NMNH 550154;Ce coL;yes;25,67;21,285;9,17;3,525;6,715;0,69;0,46;3,98;1,85;Galatius et al. 2019
+Cephalorhynchus commersonii;Cephalorhynchus commersonii - R;NMNH 550155;Ce coR;yes;26,22;20,055;9,095;3,446666667;6,395;0,606666667;0,453333333;3,73;1,88;Galatius et al. 2019
+Kogia sima;Kogia sima;USNM 572734;Ko si;yes;27,61;26,945;9,9325;4,223333333;7,045;0,515;0,503333333;4;1,97;Galatius et al. 2019
+kogiine;kogiine_fossil;LACM 37258;kogi;U;40,145;41,815;13,02;6,026666667;8,97;0,535;0,7725;17,57;2;Galatius et al. 2019
+Phocoena phocoena;Phocoena phocoena adult - L;NMNH 571892;Ph phL;yes;27,24;22,23;8,91;4,046666667;6,205;0,53;0,376666667;4,47;1,94;Galatius et al. 2019
+Phocoena phocoena;Phocoena phocoena adult - R;NMNH 571892;Ph phR;yes;27,21;23,83;8,825;4,29;5,95;0,55;0,383333333;4,82;1,89;Galatius et al. 2019
+Pontoporia blainvillei;Pontoporia blainvillei - R;NMNH 482752;Po bl;yes;31,715;29,85;9,755;4,15;6,9;0,625;0,483333333;9,58;2;Galatius et al. 2019
+Pterophocaena nishinoi;Pterophocaena nishinoi_;NMV 7;Pt ni;U;28,345;NA;10,93;5,073333333;7,93;0,553333333;0,53;NA;1,71;Galatius et al. 2019
+Salumiphocaena stocktoni;Salumiphocaena stocktoni_;UCMP 34576;Sa st;U;29,51;25,23;10,08;4,1;7,42;0,586666667;0,643333333;2,7;1,82;Galatius et al. 2019
+Carolinacetus;?Carolinacetus;UM-KPG-M 164;Ca sp;U;28,07;10,4;10,47;6,5;5,8;0,9;NA;8,55;2,25;Mourlam & Orliac 2017
+Cynthiacetus;cf. Cynthiacetus;CCNHM 167;Cy sp;U;38,79;17,33;12,01;7,83;7,58;1,45;0,47;10,53;2,39;Churchill et al. 2016
+Protocetid;Protocetid indet. ï_;UM-KPG-M 73;Pr in;U;22,44;8,9;9,48;5,32;7;1,2;NA;4,8;2,1;Mourlam & Orliac 2017
+Zygorhiza kochii;Zygorhiza kochii;USNM PAL 214433;Zy ko;U;33,7;16,6;12,4;6,5;NA;1,2;0,6;NA;2,5;Ekdale & Racicot 2015
+Zygorhiza kochii;Zygorhiza kochii;USNM 4748;Zy ko2;U;36,05;15,58;11,25;6,96;7,07;1,09;0,65;12,15;2,11;Churchill et al. 2016
+;Bos taurus;UPPal ART-8-055;Bo ta;no;31,3;4,6;8,94;3,9;5,83;0,65;0,2;7,34;3,55;Mourlam & Orliac 2017
+;Capra hircus;UM-543N;Ca hi;no;20,94;11,24;6,9;2,84;5,55;0,15;NA;NA;2,25;Mourlam & Orliac 2017
+;Cebochoeridae indet.;UM-SNB-2257;Ce in;U;13,85;8,44;5,39;2,62;3,9;0,02;0,1;1,7;2,2;Mourlam & Orliac 2017
+;Choeropsis liberiensis;UPPal-M09-5-005a;Ch li;no;40,5;6,9;12,49;6,3;8,05;0,5;0,49;14,6;3,25;Mourlam & Orliac 2017
+;Diacodexis ilicis;AMNH VP 16141;Di il;U;7,35;5,21;3,55;1,68;3,4;0,14;NA;1,9;2;Orliac et al. 2012, Mourlam & Orliac 2017
+;Hippopotamus amphibius;UM-N179;Hi am;no;57,33;8,1;14,78;7,44;10,9;0,7;NA;31,23;3,5;Mourlam & Orliac 2017
+;Moschiola meminna;UM-58V;Mo me;no;17,11;7,64;5,95;2,83;5,2;0,4;0,27;2,17;2,8;Mourlam & Orliac 2017
+;Ovis aries;UM-785N;Ov ar;no;28,51;14,85;9,5;4;6,69;0,9;0,3;5,57;2,8;Mourlam & Orliac 2017
+;Poebrotherium;AMNH not numbered;Po sp;U;27,2;14,8;6,95;4,02;5,27;0,25;0,2;4,19;3,5;Mourlam & Orliac 2017
+;Rangifer tarandus;UPPal ART-12-020;Ra ta;no;25,5;8,9;9,6;4,3;6,7;NA;0,2;7,63;2,12;Mourlam & Orliac 2017
+;Sus scrofa;UM-784N;Su sc;no;33,86;2;7,45;4,02;5,97;0,06;0,2;4,83;3,7;Mourlam & Orliac 2017
+;Tayassu pecari;UM-N-03;Ta pe;no;29;7,28;6,53;3,58;5,15;0,21;0,18;4,57;3,75;Mourlam & Orliac 2017
+Balaenoptera ryani;"""Balaenoptera"" ryani";CAS 1733;Ba ry;U;53,6;22,5;15,6;11,4;NA;1,3;0,5;NA;2,7;Ekdale 2016
+Megaptera miocaena;"""Megaptera"" miocaena";USNM V10300;Me mi;U;57,9;18,2;14,7;9,6;NA;1,7;0,6;NA;2,7;Ekdale & Racicot 2015
+Atlanticetus patulus;Aglaocetus patulus;USNM V 23690;Ag pa;U;44,7;17,2;14,2;6,7;NA;1,2;0,4;NA;2,6;Ekdale 2016
+Balaena mysticetus;Balaena mysticetus;LACM 97312;Ba my;no;54,7;16,6;16,8;8,5;NA;1,1;0,8;NA;2;Ekdale & Racicot 2015
+Balaenoptera acutorostrata;Balaenoptera acutorostrata;SDNHM 23642;Ba ac;no;52,9;31,6;15,1;9,9;NA;0,8;0,5;NA;2,5;Ekdale & Racicot 2015
+Balaenoptera physalus;Balaenoptera physalus;MNHN AZ.MC.1989.403;Ba ph;no;80,02;34,95;20,15;10,14;11,95;1,85;0,62;23,81;2,08;Churchill et al. 2016
+Balaenopteridae;Balaenopteridae;SDSNH 83695;Bal1;U;51,1;30,1;17,1;8,1;NA;1,5;0,8;NA;2;Ekdale & Racicot 2015
+Balaenopteridae;Balaenopteridae;TMM 42958-35;Bal2;U;66,9;32,5;25;12,1;NA;1,6;0,7;NA;2,4;Ekdale & Racicot 2015
+Cephalotropis coronatus;Cephalotropis coronatus;CMM-V-3636;Ce co;U;39,6;18,8;13,1;8,3;NA;1,3;0,6;NA;2,3;Ekdale 2016
+Cophocetus oregonensis;Cophocetus oregonensis;UO F36450;Co or;U;38;16,7;9,7;6,3;NA;0,4;0,7;NA;2,7;Ekdale 2016
+Eomysticetus whitmorei;Eomysticetus whitmorei;ChM PV4253;Eo wh;U;36,2;22,5;12,1;6,8;NA;1,3;0,7;NA;2,5;Ekdale 2016
+Eschrichtiidae;Eschrichtiidae;SDSNH 65021;Esch;U;57,8;28,4;16,5;10,6;NA;1,1;0,7;NA;2,4;Ekdale & Racicot 2015
+Eschrichtius robustus;Eschrichtius robustus;SDNHM 24316;Es ro;no;60,9;36,1;19,1;9,5;NA;1,4;0,7;NA;2,1;Ekdale & Racicot 2015
+Eubalaena australis;Eubalaena australis;MNHN AZ.MC 1877-93;Eu au;no;61,29;14,94;14,53;7,09;11,95;0,97;0,62;38,59;2,56;Churchill et al. 2016
+Eubalaena glacialis;Eubalaena glacialis;LACM 54763;Eu gl;no;57,2;8,3;15,4;9,1;NA;1,3;0,9;NA;2,4;Ekdale & Racicot 2015
+Halicetus ignotus;Halicetus ignotus;USNM V23636;Ha ig;U;54;21,1;14;8,6;NA;1,3;0,6;NA;2,5;Ekdale 2016
+Herpetocetus morrowi;Herpetocetus morrowi;SDSNH 63690;He mo;U;39,1;23,8;11,6;8,1;NA;1,5;0,6;NA;3,3;Ekdale 2016
+Megaptera novaeangliae;Megaptera novaeangliae;HSU VM2776;Me no;no;57,6;35,3;18;9,2;NA;2;0,7;NA;2,2;Ekdale & Racicot 2015
+Metopocetus durinasus;Metopocetus durinasus;USNM V8518;Me du;U;47,8;22,5;10,8;9;NA;0,9;0,8;NA;2,9;Ekdale 2016
+Micromysticetus rothauseni;Micromysticetus rothauseni;ChM PV7225;Mi ro;U;36,3;25,1;12,4;7,4;NA;1,1;0,5;NA;2,6;Ekdale 2016
+Parietobalaena securis;Parietobalaena cf. P. securis;SDSNH 61095;Pa se;U;40,1;22,5;15,5;8,3;NA;0,8;0,4;NA;2,7;Ekdale 2016
+Parietobalaena palmeri;Parietobalaena palmeri;USNM 517872;Pa pa;U;43,8;21,3;11,5;8,3;NA;1;0,7;NA;2,8;Ekdale 2016
+Peripolocetus vexillifer;Peripolocetus vexillifer;SDSNH 53999;Pe ve;U;41,6;14,2;11,8;6,7;NA;1;0,5;NA;2,7;Ekdale 2016
+Piscobalaena nana;Piscobalaena nana;MNHN F.SAS 892;Pi na;U;43,38;13,79;11,04;7,77;8,36;1,04;NA;19,28;2,36;Churchill et al. 2016
+aetiocetid;Toothed Mysticeti;ChM PV5720;To my;U;34,3;20;12,2;5,9;NA;1,05;0,49;NA;2,1;Ekdale 2016
+Aulophyseter morricei;Aulophyseter morricei;SDSNH 55015;Au mo;U;32,1;30,4;12,2;5,7;NA;2,1;0,9;NA;1,8;Ekdale 2016
+Delphinapterus leucas;Delphinapterus leucas;MNHN AZ.MC.A3548;De le;no;52,57;46,78;15,23;5,81;12,93;2,64;0,71;20,8;1,75;Churchill et al. 2016
+Echovenator sandersi;Echovenator sandersi;GSM 1098;Ec sa;U;33,72;24,34;10,56;4,27;7,99;1,56;0,64;14,48;2;Churchill et al. 2016
+Hyperoodon ampullatus;Hyperoodon ampullatus;MNHN 1913-286;Hy am;no;42,36;33,1;15,08;7,46;11,08;3,01;1,1;13,79;1,78;Churchill et al. 2016
+Inia geoffrensis;Inia geoffrensis;MNHN uncatalogued;In ge;no;38,3;30,51;12,66;4,4;10,06;1,3;0,75;5,63;1,58;Churchill et al. 2016
+Kentriodon pernix;Kentriodon pernix;USNM 8060;Ke pe;U;27,62;21,47;8,83;3,98;6,48;1,05;0,59;3,53;1,72;Churchill et al. 2016
+Kogia breviceps;Kogia breviceps;MNHN 1877-277;Ko br;yes;26,55;21;8,38;4,83;6,25;1,12;0,7;1,67;1,81;Churchill et al. 2016
+Leucopleurus acutus;Leucopleurus acutus;AMNH 143513;Le ac;no;33,92;24,18;10,16;4,7;8,2;1,63;0,64;2,85;1,92;Churchill et al. 2016
+Lipotes vexillifer;Lipotes vexillifer;AMNH 57333;Li ve;no;37,75;27,79;11,32;6,03;8,68;1,85;0,67;4,07;2,04;Churchill et al. 2016
+Monodon monoceros;Monodon monoceros;AMNH 254554;Mo mo;no;41,93;31,65;12,4;6,22;10,1;1,63;0,86;10,64;1,81;Churchill et al. 2016
+Phocageneus;Phocageneus sp.;USNM 182942;Ph sp;U;43,54;34,26;12,74;4,7;9,75;2,06;NA;6,4;2;Churchill et al. 2016
+Phocoena phocoena;Phocoena phocoena;MNHN AZ.MC.A3548;Ph ph;yes;26,29;20,88;9,35;4,3;6,71;1,27;0,69;4,77;1,58;Churchill et al. 2016
+Phocoenoides dalli;Phocoenoides dalli;MNHN 1992-47;Ph da;yes;24,65;19,8;9,18;3,85;6,58;1,65;0,8;5,54;1,35;Churchill et al. 2016
+Physeter macrocephalus;Physeter macrocephalus;MNHN 1981-36;Ph ma;no;47,31;38,38;19,14;9,29;14,06;4,01;1,82;8,07;1,58;Churchill et al. 2016
+Pontoporia blainvillei;Pontoporia blainvillei;AMNH 254554;Po bl;yes;30,35;27,86;9,01;4,17;7,49;1,04;0,56;6,91;2,03;Churchill et al. 2016
+Sousa chinensis;Sousa chinensis;MNHN 1993-88;So ch;no;34,05;29,22;11,52;4,1;8,18;2,19;0,69;5,27;1,72;Churchill et al. 2016
+Squalodon calvertensis;Squalodon calvertensis;USNM 10484;Sq ca;U;26,79;16,6;9,53;4,21;7,94;1,55;NA;5,63;1,63;Churchill et al. 2016
+xenorophid;Stem Odontoceti;ChM PV2776;St Od;U;32;26,1;12,4;7,1;NA;1,8;0,7;NA;2,1;Ekdale 2016
+Tursiops truncatus;Tursiops truncatus;MNHN AZ.MC.1903-201;Tu tr;no;34,42;28,14;11,13;4,38;8,6;1,94;0,76;4,96;1,75;Churchill et al. 2016
+Zarhachis flagellator;Zarhachis flagellator;USNM 10484;Za fl;U;34,74;24,96;11,13;4,99;8,28;2,35;0,69;8,82;1,83;Churchill et al. 2016
+Zarhinocetus errabundus;Zarhinocetus errabundus;SDSNH 86299;Za er;U;32,7;18,8;10,8;4,9;NA;1,9;0,6;NA;2,3;Ekdale 2016
+Ziphius cavirostris;Ziphius cavirostris;MNHN 1902-218;Zi ca;no;35,35;30,05;14,62;6,78;9,91;2,58;1,12;9,06;1,75;Churchill et al. 2016
