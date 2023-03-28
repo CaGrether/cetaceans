@@ -53,7 +53,7 @@ for (i in c(24:32)){
         row.names(a) <- d$genus
         x1 <- na.omit(a)
         
-        td <- treedata(phy, x1, sort=T)
+        td <- treedata(phy, x1, sort=T) #geiger
         
         if(length(x1[,1]) == length(td$data)) row.names(td$data)<-row.names(x1)
         
