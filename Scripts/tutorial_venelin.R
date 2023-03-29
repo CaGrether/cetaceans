@@ -10,37 +10,42 @@ library(cowplot)
 # make results reproducible
 set.seed(4, kind = "Mersenne-Twister", normal.kind = "Inversion")
 
-tree <- PCMTree(PCMFitDemoObjects$dtSimulated$tree[[1]])
-tree
+# the tree
+ tree <- PCMTree(PCMFitDemoObjects$dtSimulated$tree[[1]])
+ tree
 
-X <- PCMFitDemoObjects$dtSimulated$X[[1]][, seq_len(PCMTreeNumTips(tree))]
-dim(X)
+# the data
+ X <- PCMFitDemoObjects$dtSimulated$X[[1]][, seq_len(PCMTreeNumTips(tree))]
+ dim(X) # 2 traits, 80 tips of tree
 
-plTree <- PCMTreePlot(tree, layout="fan") +
-  geom_tiplab2(size = 2) + 
-  geom_nodelab(size = 2, color = "black") + 
-  geom_treescale(width = max(PCMTreeNodeTimes(tree)), x = 0, linesize = .25, fontsize = 2, offset = 79)
+# create plots of tree and data
+ plTree <- PCMTreePlot(tree, layout="fan") +
+   geom_tiplab2(size = 2) + 
+   geom_nodelab(size = 2, color = "black") + 
+   geom_treescale(width = max(PCMTreeNodeTimes(tree)), x = 0, linesize = .25, fontsize = 2, offset = 79)
 
-plX <- PCMPlotTraitData2D(
-  X[, seq_len(PCMTreeNumTips(tree))], 
-  tree, 
-  scaleSizeWithTime = FALSE,
-  numTimeFacets = 4) +
-  geom_text(
-    aes(x = x, y = y, label = id, color = regime), 
-    size=2, 
-    position = position_jitter(.4, .4)) +
-  theme_bw() +
-  theme(legend.position = "bottom")
+ plX <- PCMPlotTraitData2D(
+   X[, seq_len(PCMTreeNumTips(tree))], 
+   tree, 
+   scaleSizeWithTime = FALSE,
+   numTimeFacets = 4) +
+   geom_text(
+     aes(x = x, y = y, label = id, color = regime), 
+     size=2, 
+     position = position_jitter(.4, .4)) +
+   theme_bw() +
+   theme(legend.position = "bottom")
 
-cowplot::plot_grid(plTree, plX, labels = LETTERS[1:2], nrow=2, rel_heights = c(2,1))
+ cowplot::plot_grid(plTree, plX, labels = LETTERS[1:2], nrow=2, rel_heights = c(2,1))
 
-PCMDefaultModelTypes()
+#### step 2: Gaussian model types 
+ 
+ PCMDefaultModelTypes()
 
-modelBM <- PCM(
-  PCMDefaultModelTypes()["B"], modelTypes = PCMDefaultModelTypes(), k = 2)
+ modelBM <- PCM(
+   PCMDefaultModelTypes()["B"], modelTypes = PCMDefaultModelTypes(), k = 2)
 
-modelBM
+ modelBM
 
 modelOU <- PCM(
   PCMDefaultModelTypes()["F"], modelTypes = PCMDefaultModelTypes(), k = 2)

@@ -1,17 +1,17 @@
 # cross-check data
 # 1. read the input data
 
-setwd("C:/Users/Caro/Documents/Uni_Erlangen/Studium/Thesis")
+#setwd("C:/Users/Caro/Documents/Uni_Erlangen/Studium/Thesis")
 
-mySpreadsheet <- read.csv("Data/MySpreadsheet.csv", sep = ";",na.strings = c("", NA))
+mySpreadsheet <- read.csv("data/MySpreadsheet.csv", sep = ";",na.strings = c("", NA))
 
 
 
 # 2. read the trees
 ## set up library
-tree.dangerous <- ape::read.tree("Trees/Cetacea_Dangerous_Median.tre")
-tree.risky <- ape::read.tree("Trees/Cetacea_Risky_Median.tre")
-tree.safe <- ape::read.tree("Trees/Cetacea_Safe_Median.tre")
+tree.dangerous <- ape::read.tree("data/trees/Cetacea_Dangerous_Median.tre")
+tree.risky <- ape::read.tree("data/trees/Cetacea_Risky_Median.tre")
+tree.safe <- ape::read.tree("data/trees/Cetacea_Safe_Median.tre")
 
 
 
