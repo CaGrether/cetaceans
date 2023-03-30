@@ -117,12 +117,12 @@ genus.o <- genus.name[!duplicated(genus.name)]# put only unique genus names into
 
 
 ## loops for cross-checking how many genus names are in trees
-#dangerous tree
+# dangerous tree
 
 dangerous.genus <- c()  # empty container for genera present in tree
 genus <- c()            # empty container for storing all genera
 
-#loop
+# loop
 for (i in genus.o) {   # for each genus
   
   #check whether it's in tree
@@ -135,7 +135,7 @@ for (i in genus.o) {   # for each genus
 testing.genus <- data.frame(genus, dangerous.genus)  # make a data frame with all genera
                                                      # to compare with coverage in all trees
 
-#risky tree
+# risky tree
 
 risky.genus <- c()  # empty container for genera present in tree
 
@@ -145,23 +145,24 @@ for (i in genus.o) {
                  # if present in tree, put into container
 }
 
-testing.genus$risky.genus <- risky.genus  
+testing.genus$risky.genus <- risky.genus  # add to others for comparison
 
-#loop for safe tree
+# safe tree
 
-safe.genus <- c()
+safe.genus <- c()     # empty container for genera present in tree
 
 for (i in genus.o) {
   
   safe.genus <- c(safe.genus, (ifelse(i %in% split.safe.labels, TRUE, FALSE)))
+                # if present in tree, put into container
 }
 
-testing.genus$safe.genus <- safe.genus
+testing.genus$safe.genus <- safe.genus     # add to others for comparison
 
 
-#how much was covered?
-sum(testing.genus$dangerous.genus==TRUE)
-length(genus)
+# how many taxa are represented in tree?
+sum(testing.genus$dangerous.genus==TRUE)   # number of taxa in dangerous tree
+length(genus)                              # 
 
 # inner ear data ----------------------------------------------------------
 
