@@ -79,7 +79,8 @@ View(mySpreadsheet)   # check if everything worked
 
 ## check how much of the data is covered
 sum(mySpreadsheet$risky==TRUE)    # how many taxa are in risky tree
-length(mySpreadsheet$Specimen.number.from.Racicot.et.al.2019)  # how many are in the data
+#length(mySpreadsheet$Specimen.number.from.Racicot.et.al.2019)
+nrow(mySpreadsheet)               # how many are in the data
 
 
 ######### genus in tree -----------------------------------------------------------
