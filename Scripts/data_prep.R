@@ -9,51 +9,50 @@ mySpreadsheet <- read.csv("data/MySpreadsheet.csv", sep = ";",na.strings = c("",
 
 # 2. read the trees
 ## set up library
-tree.dangerous <- ape::read.tree("data/trees/Cetacea_Dangerous_Median.tre")
-tree.risky <- ape::read.tree("data/trees/Cetacea_Risky_Median.tre")
-tree.safe <- ape::read.tree("data/trees/Cetacea_Safe_Median.tre")
+tree.dangerous <- ape::read.tree("data/trees/Cetacea_Dangerous_Median.tre") #very big
+tree.risky <- ape::read.tree("data/trees/Cetacea_Risky_Median.tre")         #big tree
+tree.safe <- ape::read.tree("data/trees/Cetacea_Safe_Median.tre")           #smaller tree
 
 
 
 # a) Dangerous
-## names of taxa at tip of tree
+## names of taxa at tip of tree as vector
 tree.dang.labels <- tree.dangerous$tip.label
 
-# cross check taxa (are they in the tree)
-dangerous <- c() #create empty vector to put in taxa which are in the tree
+## cross check taxa (are taxa from the data in the tree)
 
+dangerous <- c() #empty vector to put in taxa which are in the tree
 
-for(i in mySpreadsheet$Taxa.new){
+for(i in mySpreadsheet$Taxa.new){  # for each taxon
   
-  tmp <- gsub(" ", "_", i) #substitute space for _ in names of taxa for every tip label
+  tmp <- gsub(" ", "_", i) # substitute space for _ in taxon name for every tip label
   
   # is the taxa in the tree
   dangerous <- c(dangerous, 
-                 (ifelse (tmp %in% tree.dang.labels, TRUE, FALSE)) )
+                 (ifelse (tmp %in% tree.dang.labels, TRUE, FALSE)) ) # write TRUE or FALSE
   
 }
 
-mySpreadsheet$dangerous <- dangerous
+mySpreadsheet$dangerous <- dangerous  # new col with TRUE or FALSE
 
 
 
 # b) risky
-## names of taxa at tip of tree
+## names of taxa at tip of tree as vector
 tree.risk.labels <- tree.risky$tip.label
 
-## cross check taxa (are they in the tree)
+## cross check taxa (are taxa from the data in the tree)
 risky <- c()
 
-## for each taxa
-for (i in mySpreadsheet$Taxa.new) {
+for (i in mySpreadsheet$Taxa.new) {   # for each taxon
   
-  tmp2 <- gsub(" ","_",i)
+  tmp2 <- gsub(" ","_",i)  # substitute space for "_"
   
-  risky <- c(risky,
-             (ifelse(tmp2 %in% tree.risk.labels, TRUE, FALSE)))
+  risky <- c(risky,        # is it in the tree
+             (ifelse(tmp2 %in% tree.risk.labels, TRUE, FALSE))) #TRUE/FALSE
 }
 
-mySpreadsheet$risky <- risky
+mySpreadsheet$risky <- risky    # new col with TRUE or FALSE
 
 
 
@@ -61,90 +60,92 @@ mySpreadsheet$risky <- risky
 ## names of taxa at tip of tree
 tree.safe.labels <- tree.safe$tip.label
 
-## cross check taxa
+## cross check taxa (are taxa from the data in the tree)
 safe <- c()
 
-##for each taxa
-for (i in mySpreadsheet$Taxa.new) {
+for (i in mySpreadsheet$Taxa.new) {    #for each taxon
   
-  tmp3 <- gsub(" ","_",i)
+  tmp3 <- gsub(" ","_",i)    # substitue space for "_"
   
-  ## is it in the tree
-  safe <- c(safe,
-            (ifelse(tmp3 %in% tree.safe.labels,TRUE,FALSE)))
+  
+  safe <- c(safe,            # is it in the tree
+            (ifelse(tmp3 %in% tree.safe.labels,TRUE,FALSE))) # TRUE or FALSE
   
 }
 
 mySpreadsheet$safe <- safe
-View(mySpreadsheet)
+View(mySpreadsheet)   # check if everything worked
 
 
 ## check how much of the data is covered
-sum(mySpreadsheet$risky==TRUE)
-length(mySpreadsheet$Specimen.number.from.Racicot.et.al.2019)
+sum(mySpreadsheet$risky==TRUE)    # how many taxa are in risky tree
+length(mySpreadsheet$Specimen.number.from.Racicot.et.al.2019)  # how many are in the data
 
 
-# genus in tree -----------------------------------------------------------
+######### genus in tree -----------------------------------------------------------
 
 
-## check for genus
+## check for genus coverage
 
 #my taxa as in mySpreadsheet$taxa_corrected
-split.taxa <- unlist(strsplit(mySpreadsheet$Taxa.new, " "))
+split.taxa <- unlist(strsplit(mySpreadsheet$Taxa.new, " "))  # split taxon names (genus / species)
 
 #the taxa in trees as in tree.safe/risky/dangerous$tip.label
 
-split.dang.labels <- unlist(strsplit(tree.dang.labels, "_"))
-split.risk.labels <- unlist(strsplit(tree.risk.labels, "_"))
-split.safe.labels <- unlist(strsplit(tree.safe.labels, "_"))
+split.dang.labels <- unlist(strsplit(tree.dang.labels, "_")) # split taxon names in the trees
+split.risk.labels <- unlist(strsplit(tree.risk.labels, "_")) # i.e split tip labels
+split.safe.labels <- unlist(strsplit(tree.safe.labels, "_")) # and store in container
 
 
-# genus
+# get the genus names (without species names)
 
-genus.name <- c()
+genus.name <- c()                             # empty container
 
-for (i in 1:length(mySpreadsheet$Taxa.new)) {
+for (i in 1:length(mySpreadsheet$Taxa.new)) { # for every corrected taxon
   
-  genus <- mySpreadsheet$Taxa.new[i]
+  genus <- mySpreadsheet$Taxa.new[i]          # put into temp container
   
-  if (!is.na(genus)){
+  if (!is.na(genus)){                         # if there is a taxon present
     genus.name <- c(genus.name, unlist(strsplit(mySpreadsheet$Taxa.new[i], " "))[1])
-  }
+  }                                           # put only genus name into container
   
 }
 
-duplicated(genus.name)
-genus.o <- genus.name[!duplicated(genus.name)]
+duplicated(genus.name)                        # how many genera are present multiple times
+genus.o <- genus.name[!duplicated(genus.name)]# put only unique genus names into genus.o
 
 
 
-# loop for dangerous tree
+## loops for cross-checking how many genus names are in trees
+#dangerous tree
 
-dangerous.genus <- c()
-genus <- c()
+dangerous.genus <- c()  # empty container for genera present in tree
+genus <- c()            # empty container for storing all genera
 
 #loop
-for (i in genus.o) {
+for (i in genus.o) {   # for each genus
   
   #check whether it's in tree
   dangerous.genus <- c(dangerous.genus, (ifelse(i %in% split.dang.labels, TRUE, FALSE)) )
-  
-  genus <- c(genus, print(i))
+                     # if present in tree, put into container
+  genus <- c(genus, print(i))    # put it into genus container
   
 }
 
-testing.genus <- data.frame(genus, dangerous.genus)
+testing.genus <- data.frame(genus, dangerous.genus)  # make a data frame with all genera
+                                                     # to compare with coverage in all trees
 
-#loop for risky tree
+#risky tree
 
-risky.genus <- c()
+risky.genus <- c()  # empty container for genera present in tree
 
 for (i in genus.o) {
   
   risky.genus <- c(risky.genus, (ifelse(i %in% split.risk.labels, TRUE, FALSE)))
+                 # if present in tree, put into container
 }
 
-testing.genus$risky.genus <- risky.genus
+testing.genus$risky.genus <- risky.genus  
 
 #loop for safe tree
 
